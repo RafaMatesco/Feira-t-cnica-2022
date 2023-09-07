@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Feira Tecnica</title>
+    <style>
+    body {
+        background: linear-gradient(45deg, #17101b, #b348fa);
+    }
+    form input[type="submit"] {
+    background: linear-gradient(215deg, #1f0331, #b348fa);
+    }
+
+    form input[type="submit"] :hover {
+        background: linear-gradient(to left, #1f0331, #b348fa);
+    }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="titulo">
+            <h1>
+                HEALTH CALCULATOR <img src="activity.svg" width="40" height="40">
+            </h1>
+        </div>
+        <br>
+        <div class="container">
+            <form action="calculos.php" method="post">
+                <div class="input-field">
+                    <input type="text" name="usuario" id="usuario" placeholder="Nome" required>
+                    <div class="underline"> </div>
+                </div>
+                <div class="input-field">
+                    <input type="number" name="idade" id="idade" placeholder="Idade" required>
+                    <div class="underline"> </div>
+                </div><br>
+                <div class="input-field">
+                    <input type="number" name="peso" id="peso" placeholder="Peso" required>
+                    <div class="underline"> </div>
+                </div><br>
+                <div class="input-field">
+                    <input type="number" name="altura" id="altura" placeholder="Altura" required>
+                    <div class="underline"> </div>
+                </div><br>
+                <br><p><b>Por favor selecione seu sexo:</b></p><br>
+                <div class="input-field">
+                <input type="radio" name="sexo" id="masculino" value="MASCULINO" checked>
+                    <label for="masculino"><b>MASCULINO</b></label> <br>
+                </div>
+                <div class="input-field">
+                <input type="radio" name="sexo" id="feminino" value="FEMININO">
+                    <label for="feminino"><b>FEMININO</b></label>
+                </div>
+                <br>
+                    <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </main>
+</body>
+</html>
